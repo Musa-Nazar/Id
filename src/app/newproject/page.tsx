@@ -1,7 +1,7 @@
 import MainChooseProjectPage from "@/components/ChooseProject/MainChooseProjectPage";
 import PageNavbar from "@/components/WelcomePage/PageNavbar";
 
-const chooseproject: React.FC = () => {
+const ChooseProject: React.FC = () => {
   const xml: React.ReactElement = (
     <>
       <PageNavbar />
@@ -11,4 +11,4 @@ const chooseproject: React.FC = () => {
   return xml;
 };
 
-export default chooseproject;
+export default ChooseProject;

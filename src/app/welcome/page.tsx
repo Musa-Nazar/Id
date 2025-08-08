@@ -1,7 +1,7 @@
 import MainWelcomePage from "@/components/WelcomePage/MainWelcomePage";
 import PageNavbar from "@/components/WelcomePage/PageNavbar";
 
-const welcome: React.FC = () => {
+const Welcome: React.FC = () => {
   const xml: React.ReactElement = (
     <>
       <PageNavbar />
@@ -11,4 +11,4 @@ const welcome: React.FC = () => {
   return xml;
 };
 
-export default welcome;
+export default Welcome;
