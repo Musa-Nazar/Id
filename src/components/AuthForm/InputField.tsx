@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 
 const InputField: React.FC<{
@@ -8,11 +9,10 @@ const InputField: React.FC<{
   type: string;
 }> = ({ id, label, className, type, placeholder }) => {
   //SELECT & FILE STATES
-  let selectValue, setSelectValue, file, setFile: any;
-  if (type === "select") [selectValue, setSelectValue] = useState("");
-  if (type === "file") [file, setFile] = useState("");
+  const [selectValue] = useState<string>("");
+  const [file, setFile] = useState<string>("");
   const xml = (
-    <div className={className}>
+    <div className={className || ""}>
       <label
         htmlFor={id}
         className="mb-[0.8rem] text-white text-[1.6rem] leading-[140%] inline-block"
